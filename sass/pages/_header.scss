@@ -1,0 +1,74 @@
+.header {
+    z-index: 50;
+    position: relative;
+
+    &__logo {
+        width: 7rem;
+        position: absolute;
+        top: 4rem;
+        left: 4rem; 
+
+        animation-name: rotate-180;
+        animation-duration: .5s;
+
+        -moz-animation-name: rotate-180;
+        -moz-animation-duration: .5s;
+        transition: all .5s;
+
+        &:hover {
+            transform: rotate(180deg)
+        }
+    }
+}
+
+
+.header {
+    width: $body-w;
+    height: 60rem;
+    margin: 0 auto;
+    //background-color: orangered;
+    background-image: linear-gradient(to right bottom, rgba($color-blue, .98), rgba($color-red, .95)),
+    url(../img/header.jpg); //url(/../img/header.jpg); 
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); // 25px cutout
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    position: relative;
+    text-align: center;
+    
+    &__main-header { 
+        background-color: none;
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-transform: uppercase;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+
+        span {
+            display: block;
+            line-height: 1.5;
+            
+        }
+
+        &--title {
+            font-size: 5rem;
+            animation-name: movingToRight;
+            animation-duration: 1.5s;
+
+            -moz-animation-name: movingToRight;
+            -moz-animation-duration: 1.5s;
+        }
+
+        &--paragraph {
+            font-size: 2rem;
+            animation-name: movingToLeft;
+            animation-duration: 1.5s;
+
+            -moz-animation-name: movingToLeft;
+            -moz-animation-duration: 1.5s;
+        }
+    }
+}

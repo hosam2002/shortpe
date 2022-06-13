@@ -1,0 +1,32 @@
+.creative-accounts {
+    margin: 0 auto;
+    width: 60rem;
+    height: 60rem;
+    background-color: $color-grey;
+    clip-path: polygon(0 20rem, 100% 0, 100% 100%, 0 100%);
+    -moz-clip-path: polygon(0 20rem, 100% 0, 100% 100%, 0 100%);
+    margin-top: -20rem;
+
+    position: relative;
+
+    .shortpe-logo {
+        width: 20rem;
+        height: 20rem;
+        //margin-top: 15rem;
+        //background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+
+
+        .sh-logo {
+            width: 15rem;
+        }
+    }
+
+}

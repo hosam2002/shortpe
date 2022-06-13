@@ -1,0 +1,24 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    font-size: 1.6rem;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    background-color: $background;
+    font-family: "maven pro", sans-serif;
+    width: $body-w;
+    margin: 0 auto;
+}
